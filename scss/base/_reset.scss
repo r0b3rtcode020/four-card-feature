@@ -1,0 +1,34 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  @include text-preset-4;
+  background-color: $color-bg;
+  color: $color-grey-500;
+}
+
+img {
+  max-width: 100%; /* Escala las imágenes y videos al ancho del contenedor */
+  height: auto; /* Mantiene las proporciones */
+  display: block; /* Elimina espacios en blanco debajo de las imágenes */
+}
+
+a {
+  text-decoration: none; /* Elimina subrayados */
+  color: inherit; /* Hace que los enlaces adopten el color del texto */
+}
+
+button {
+  font: inherit; /* Adopta la fuente del contenedor */
+  border: none; /* Elimina bordes predeterminados */
+  background: none; /* Limpia estilos base */
+  cursor: pointer;
+}

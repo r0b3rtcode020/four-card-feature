@@ -1,0 +1,67 @@
+@use "./variables" as *;
+
+@mixin text-preset-1 {
+  font-family: $ff-poppins;
+  font-size: $fs-36;
+  font-weight: $fw-semibold;
+  line-height: $lh-140;
+  letter-spacing: $lspacing-25;
+}
+
+@mixin text-preset-2 {
+  font-family: $ff-poppins;
+  font-size: $fs-36;
+  font-weight: $fw-extralight;
+  line-height: $lh-140;
+  letter-spacing: $lspacing-25;
+}
+
+@mixin text-preset-3 {
+  font-family: $ff-poppins;
+  font-size: $fs-20;
+  font-weight: $fw-semibold;
+  line-height: $lh-135;
+  letter-spacing: 0;
+}
+
+@mixin text-preset-4 {
+  font-family: $ff-poppins;
+  font-size: $fs-15;
+  font-weight: $fw-regular;
+  line-height: $lh-140;
+  letter-spacing: $lspacing-10;
+}
+
+@mixin text-preset-5 {
+  font-family: $ff-poppins;
+  font-size: $fs-13;
+  font-weight: $fw-regular;
+  line-height: $lh-160;
+  letter-spacing: $lspacing-9;
+}
+
+/* Mobile */
+
+@mixin text-preset-mb1 {
+  font-family: $ff-poppins;
+  font-size: $fs-24;
+  font-weight: $fw-semibold;
+  line-height: $lh-140;
+  letter-spacing: $lspacing-25;
+}
+
+@mixin text-preset-mb2 {
+  font-family: $ff-poppins;
+  font-size: $fs-24;
+  font-weight: $fw-extralight;
+  line-height: $lh-140;
+  letter-spacing: $lspacing-25;
+}
+
+@mixin text-preset-mb4 {
+  font-family: $ff-poppins;
+  font-size: $fs-15;
+  font-weight: $fw-regular;
+  line-height: $lh-140;
+  letter-spacing: $lspacing-10;
+}
