@@ -3,13 +3,13 @@
 
 $card-border-colors: (
   "supervisor": $color-cyan,
-  "team-builder": $color-red,
+  "team": $color-red,
   "karma": $color-orange,
   "calculator": $color-blue,
 );
 
 @each $type, $color in $card-border-colors {
-  .card__#{$type} {
+  .card-#{$type} {
     display: flex;
     flex-direction: column;
     gap: $spacing-32;
