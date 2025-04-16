@@ -11,8 +11,10 @@
   <body>
     <main class="container">
       <header class="header">
-        <h2 class="header__subtitle">Reliable, efficient delivery</h2>
-        <h1 class="header__title">Powered by Technology</h1>
+        <div class="header__title">
+          <h2 class="header__title--light">Reliable, efficient delivery</h2>
+          <h1 class="header__title--bold">Powered by Technology</h1>
+        </div>
         <p class="header__description">
           Our Artificial Intelligence powered tools use millions of project data points to ensure
           that your project is successful
@@ -20,33 +22,45 @@
       </header>
       <section class="cards">
         <article class="card card__supervisor">
-          <h3 class="card__title">Supervisor</h3>
-          <p class="card__description">Monitors activity to identify project roadblocks</p>
+          <header class="card__header">
+            <h3 class="card__header--title">Supervisor</h3>
+            <p class="card__header--description">
+              Monitors activity to identify project roadblocks
+            </p>
+          </header>
           <figure class="card__icon">
             <img src="./images/icon-supervisor.svg" alt="icon-supervisor" />
           </figure>
         </article>
         <article class="card card__team-builder">
-          <h3 class="card__title">Team Builder</h3>
-          <p class="card__description">
-            Scans our talent network to create the optimal team for your project
-          </p>
+          <header class="card__header">
+            <h3 class="card__header--title">Team Builder</h3>
+            <p class="card__header--description">
+              Scans our talent network to create the optimal team for your project
+            </p>
+          </header>
           <figure class="card__icon">
             <img src="./images/icon-team-builder.svg" alt="icon-team-builder" />
           </figure>
         </article>
         <article class="card card__karma">
-          <h3 class="card__title">Karma</h3>
-          <p class="card__description">Regularly evaluates our talent to ensure quality</p>
+          <header class="card__header">
+            <h3 class="card__header--title">Karma</h3>
+            <p class="card__header--description">
+              Regularly evaluates our talent to ensure quality
+            </p>
+          </header>
           <figure class="card__icon">
             <img src="./images/icon-karma.svg" alt="icon-karma" />
           </figure>
         </article>
         <article class="card card__calculator">
-          <h3 class="card__title">Calculator</h3>
-          <p class="card__description">
-            Uses data from past projects to provide better delivery estimates
-          </p>
+          <header class="card__header">
+            <h3 class="card__header--title">Calculator</h3>
+            <p class="card__header--description">
+              Uses data from past projects to provide better delivery estimates
+            </p>
+          </header>
           <figure class="card__icon">
             <img src="./images/icon-calculator.svg" alt="icon-calculator" />
           </figure>
