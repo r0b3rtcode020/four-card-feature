@@ -51,7 +51,7 @@ button {
   align-items: center;
   gap: 1rem;
   text-align: center;
-  width: 316px;
+  width: clamp(316px, 75vw, 540px);
   margin: 0 auto;
 }
 .header__title--light {
@@ -61,12 +61,30 @@ button {
   line-height: 1.4;
   letter-spacing: 0.25px;
 }
+@media (width >= 768px) {
+  .header__title--light {
+    font-family: "Poppins", sans-serif;
+    font-size: 2.25rem;
+    font-weight: 200;
+    line-height: 1.4;
+    letter-spacing: 0.25px;
+  }
+}
 .header__title--bold {
   font-family: "Poppins", sans-serif;
   font-size: 1.5rem;
   font-weight: 600;
   line-height: 1.4;
   letter-spacing: 0.25px;
+}
+@media (width >= 768px) {
+  .header__title--bold {
+    font-family: "Poppins", sans-serif;
+    font-size: 2.25rem;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: 0.25px;
+  }
 }
 .header__description {
   font-family: "Poppins", sans-serif;
@@ -75,12 +93,36 @@ button {
   line-height: 1.4;
   letter-spacing: 0.1px;
 }
+@media (width >= 768px) {
+  .header__description {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9375rem;
+    font-weight: 400;
+    line-height: 1.4;
+    letter-spacing: 0.1px;
+  }
+}
 
 .cards {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
   gap: 2rem;
+  margin: 0 auto;
+}
+@media (768px <= width < 1200px) {
+  .cards {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    min-width: 660px;
+  }
+}
+@media (width >= 1200px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    min-width: 1114px;
+  }
 }
 
 .card-supervisor {
@@ -91,9 +133,21 @@ button {
   border-radius: 0.5rem;
   background-color: #ffffff;
   box-shadow: 0 15px 30px -11px rgba(131, 166, 210, 0.5);
-  width: 314px;
+  width: clamp(314px, 40vw, 350px);
   position: relative;
   overflow: hidden;
+}
+@media (768px <= width < 1200px) {
+  .card-supervisor {
+    grid-column: 2/4;
+    grid-row: 1/2;
+  }
+}
+@media (width >= 1200px) {
+  .card-supervisor {
+    grid-column: 1/2;
+    grid-row: 2/4;
+  }
 }
 .card-supervisor::before {
   content: "";
@@ -114,9 +168,21 @@ button {
   border-radius: 0.5rem;
   background-color: #ffffff;
   box-shadow: 0 15px 30px -11px rgba(131, 166, 210, 0.5);
-  width: 314px;
+  width: clamp(314px, 40vw, 350px);
   position: relative;
   overflow: hidden;
+}
+@media (768px <= width < 1200px) {
+  .card-team {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+}
+@media (width >= 1200px) {
+  .card-team {
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
 }
 .card-team::before {
   content: "";
@@ -137,9 +203,21 @@ button {
   border-radius: 0.5rem;
   background-color: #ffffff;
   box-shadow: 0 15px 30px -11px rgba(131, 166, 210, 0.5);
-  width: 314px;
+  width: clamp(314px, 40vw, 350px);
   position: relative;
   overflow: hidden;
+}
+@media (768px <= width < 1200px) {
+  .card-karma {
+    grid-column: 3/5;
+    grid-row: 2/3;
+  }
+}
+@media (width >= 1200px) {
+  .card-karma {
+    grid-column: 2/3;
+    grid-row: 3/5;
+  }
 }
 .card-karma::before {
   content: "";
@@ -160,9 +238,21 @@ button {
   border-radius: 0.5rem;
   background-color: #ffffff;
   box-shadow: 0 15px 30px -11px rgba(131, 166, 210, 0.5);
-  width: 314px;
+  width: clamp(314px, 40vw, 350px);
   position: relative;
   overflow: hidden;
+}
+@media (768px <= width < 1200px) {
+  .card-calculator {
+    grid-column: 2/4;
+    grid-row: 3/4;
+  }
+}
+@media (width >= 1200px) {
+  .card-calculator {
+    grid-column: 3/4;
+    grid-row: 2/4;
+  }
 }
 .card-calculator::before {
   content: "";

@@ -17,9 +17,11 @@ $card-border-colors: (
     border-radius: $spacing-8;
     background-color: $color-white;
     box-shadow: $shadow;
-    width: 314px;
+    width: clamp(314px, 40vw, 350px);
     position: relative;
     overflow: hidden;
+
+    @include grid-position($type);
 
     &::before {
       content: "";
