@@ -22,22 +22,19 @@
     &--light {
       @include text-preset-mb2;
       @media (width >= 768px) {
-        @include text-preset-2;
+        font-size: $fs-36;
       }
     }
 
     &--bold {
       @include text-preset-mb1;
       @media (width >= 768px) {
-        @include text-preset-1;
+        font-size: $fs-36;
       }
     }
   }
 
   &__description {
     @include text-preset-mb4;
-    @media (width >= 768px) {
-      @include text-preset-4;
-    }
   }
 }

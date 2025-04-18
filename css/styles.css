@@ -63,11 +63,7 @@ button {
 }
 @media (width >= 768px) {
   .header__title--light {
-    font-family: "Poppins", sans-serif;
     font-size: 2.25rem;
-    font-weight: 200;
-    line-height: 1.4;
-    letter-spacing: 0.25px;
   }
 }
 .header__title--bold {
@@ -79,11 +75,7 @@ button {
 }
 @media (width >= 768px) {
   .header__title--bold {
-    font-family: "Poppins", sans-serif;
     font-size: 2.25rem;
-    font-weight: 600;
-    line-height: 1.4;
-    letter-spacing: 0.25px;
   }
 }
 .header__description {
@@ -92,15 +84,6 @@ button {
   font-weight: 400;
   line-height: 1.4;
   letter-spacing: 0.1px;
-}
-@media (width >= 768px) {
-  .header__description {
-    font-family: "Poppins", sans-serif;
-    font-size: 0.9375rem;
-    font-weight: 400;
-    line-height: 1.4;
-    letter-spacing: 0.1px;
-  }
 }
 
 .cards {
