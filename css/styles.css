@@ -47,6 +47,19 @@ button {
   padding-bottom: 2.875rem;
   min-height: 100vh;
 }
+@media (width >= 768px) {
+  .container {
+    gap: 4.625rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+@media (width >= 1200px) {
+  .container {
+    padding-top: 6.375rem;
+    padding-bottom: 10.1875rem;
+  }
+}
 
 .header {
   display: flex;
