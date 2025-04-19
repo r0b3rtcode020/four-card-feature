@@ -10,6 +10,8 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
 - SCSS (CSS pre-processor)
   - Variables
   - Mixins
+  - @if
+  - @each
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
